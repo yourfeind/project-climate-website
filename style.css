@@ -1,0 +1,170 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "product-sans";
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "product-sans";
+    src: url(assets/product-sans-regular.ttf);
+}
+@font-face {
+    font-family: "product-sans";
+    src: url(assets/product-sans-italic.ttf);
+    font-style: italic;
+}
+
+/*Website Header, fixed.*/
+.header {
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.header .website-name {
+    text-align: center;
+}
+.header span {
+    margin-left: 50px;
+    color: rgb(80,80,80);
+}
+.header button {
+    border: none;
+    background-color: white;
+    padding: 20px 10px;
+    font-family: "product-sans";
+    font-size: 15px;
+    transition-duration: 0.2s;
+    margin-left: 20px;
+    width: 100px;
+    cursor:pointer;
+}
+.header button.page-notselected:hover {
+    color: rgb(20,20,20);
+}
+.header .page-selected {
+    color: rgb(46, 70, 223);
+}
+.header .page-notselected {
+    color: rgb(80,80,80);
+}
+.float {
+    box-shadow: 0px 1px 10px #999;
+}
+
+/*Page Text*/
+.pages {
+    margin: 120px 60px 0px 60px;
+    overflow: hidden;
+}
+.page-title {
+    font-size: 40px;
+    font-weight: bold;
+    display: block;
+}
+.page-section {
+    float: left;
+    width: 90%;
+}
+
+.paragraph-section {
+    margin-left: 20px;
+    display: flex;
+}
+
+.paragraph-text {
+    width: 75%;
+    display: inline-block;
+    margin-right: 25px;
+}
+.paragraph-title {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    display: block;
+}
+.paragraph {
+    color: rgb(80,80,80);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.paragraph-image-div {
+    margin-top: 50px;
+    display: block;
+    width: 25%;
+    margin-right: 20px;
+}
+.paragraph-image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+}
+.paragraph-image-caption {
+    width: 200px;
+    font-size: 15px;
+    font-style: italic;
+    color: rgb(80,80,80);
+}
+
+/*Page Navigation*/
+.chapter-navigation {
+    float: right;
+    margin: 50px;
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 25px;
+    padding: 20px 50px;
+    position: sticky;
+    top: 70px;
+}
+.chapter-navigation a {
+    display: block;
+    padding: 5px;
+    background: white;
+    border-radius: 25px;
+    text-decoration: none;
+    color: rgb(40,40,40);
+}
+.chapter-navigation a:hover {
+    background: rgb(220,220,220);
+}
+.chapter-navigation span {
+    font-size: 20px;
+}
+
+/*Page hiding*/
+.hidden {
+    display: none;
+}
+
+/*Intro page stuff*/
+.intro-banner {
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    height: 500px;
+    background-image: url(assets/amazon-rainforest.png);
+}
+.intro-banner .paragraph-title {
+    color: white;
+    line-height: 500px;
+}
+
+/*Footer Stuff*/
+.footer {
+    margin-top: 100px;
+    padding: 100px;
+    background-color: rgb(200,200,200);
+}
+.footer span {
+    display: block;
+    margin-bottom: 10px;
+}
